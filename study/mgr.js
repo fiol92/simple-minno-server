@@ -1,6 +1,6 @@
-define(['managerAPI'], function(Manager){
-    var API = new Manager();
-    API.addSettings('logger',{type:'csv', url:'csv.php'});
+define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minnojs-pavlovia/minnojs.pavlovia.plugin.min.js'], function(Manager, Pavlovia){
+    var pavlovia = new Pavlovia();
+API.addSettings('logger', pavlovia.logger);
 
     API.addSequence([
         {
